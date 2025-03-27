@@ -1,0 +1,14 @@
+{
+  "name": "modulo22",
+  "version": "1.0.0",
+  "description": "Page objects and App actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "author": "Jessica Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^14.2.0"
+  }
+}
