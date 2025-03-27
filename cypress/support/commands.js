@@ -34,3 +34,18 @@ Cypress.Commands.add('login', (email, senha) => {
     loginPageAA.login(email, senha)
     homePage.openMenu('Account')
 })
+
+Cypress.Commands.add('addProductToCheckout', () => {
+    cy.get('.post-2559 > .product-block').click()
+        cy.get('.product_title').should('contain', 'Abominable Hoodie')
+        cy.get('.button-variable-item').eq(1).click()
+    cy.get('.button-variable-item').eq(6).click()
+    cy.get('.single_add_to_cart_button').click()
+    cy.get('.woocommerce-message').should('contain', 'foi adicionado no seu carrinho')
+})
+
+Cypress.Commands.add('seeCart', () => {
+    cy.get('#cart > .dropdown-toggle').click()
+    cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()
+    cy.get('.page-title').should('contain', 'Carrinho')
+})
