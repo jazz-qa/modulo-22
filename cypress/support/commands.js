@@ -23,7 +23,7 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
+/// <reference types="cypress" />
 import { homePage } from "./pages/home.page"
 import loginPageAA from "./pages/loginAA.page"
 
@@ -33,4 +33,30 @@ Cypress.Commands.add('login', (email, senha) => {
     homePage.openMenu('Account')
     loginPageAA.login(email, senha)
     homePage.openMenu('Account')
+})
+
+Cypress.Commands.add('addProductToCart', () => {
+    cy.get('.post-2559 > .product-block').click()
+        cy.get('.product_title').should('contain', 'Abominable Hoodie')
+        cy.get('.button-variable-item').eq(1).click()
+    cy.get('.button-variable-item').eq(6).click()
+    cy.get('.single_add_to_cart_button').click()
+    cy.get('.woocommerce-message').should('contain', 'foi adicionado no seu carrinho')
+})
+
+Cypress.Commands.add('seeCart', () => {
+    cy.get('#cart > .dropdown-toggle').click()
+    cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()
+    cy.get('.page-title').should('contain', 'Carrinho')
+})
+
+Cypress.Commands.add('cleanCart', () => {
+    cy.get('.remove > .fa').click()
+    cy.get('.cart-empty').should('exist')
+})
+
+Cypress.Commands.add('checkout', () => {
+    cy.get('#terms').click()
+    cy.get('#place_order').click()
+    cy.get('.page-title').should('contain', 'Pedido recebido')
 })
