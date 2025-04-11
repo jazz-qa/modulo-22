@@ -1,0 +1,26 @@
+{
+    "success": true,
+    "cart": {
+        "_id": "67f56fa736e994dfd8baa1a9",
+        "products": [
+            {
+                "productId": {
+                    "_id": "67c8d1eed1c85b3c2446b775",
+                    "photos": [
+                        "https://exemplo.com/camiseta.jpg"
+                    ],
+                    "name": "Camiseta EBAC",
+                    "price": 149.99,
+                    "quantity": 1,
+                    "specialPrice": 149.99
+                },
+                "quantity": 1,
+                "_id": "67f56fa736e994dfd8baa1aa"
+            }
+        ],
+        "userId": "67f55de836e994dfd8baa11a",
+        "createdAt": "2025-04-08T18:49:11.924Z",
+        "updatedAt": "2025-04-08T18:49:11.924Z",
+        "__v": 0
+    }
+}

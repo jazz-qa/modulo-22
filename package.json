@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^14.2.0",
+    "cypress-html-reporter": "^11.0.0",
     "faker-br": "^0.4.1"
   },
   "devDependencies": {
