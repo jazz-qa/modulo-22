@@ -46,7 +46,7 @@ Cypress.Commands.add('addProductToCart', () => {
 
 Cypress.Commands.add('seeCart', () => {
     cy.get('#cart > .dropdown-toggle').click()
-    cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()
+    cy.get('.woocommerce-message > .button').click()
     cy.get('.page-title').should('contain', 'Carrinho')
 })
 
