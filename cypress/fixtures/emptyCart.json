@@ -1,0 +1,11 @@
+{
+    "success": true,
+    "cart": {
+        "_id": "67f56fa736e994dfd8baa1a9",
+        "products": [],
+        "userId": "67f55de836e994dfd8baa11a",
+        "createdAt": "2025-04-08T18:49:11.924Z",
+        "updatedAt": "2025-04-08T18:57:36.041Z",
+        "__v": 0
+    }
+}

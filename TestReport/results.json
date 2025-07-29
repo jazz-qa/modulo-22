@@ -1,0 +1,401 @@
+{
+  "browserName": "electron",
+  "browserPath": "",
+  "browserVersion": "130.0.6723.137",
+  "config": {
+    "baseUrl": "http://lojaebac.ebaconline.art.br/",
+    "projectRoot": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22",
+    "projectName": "modulo-22",
+    "configFile": "cypress.config.js",
+    "isTextTerminal": true,
+    "animationDistanceThreshold": 5,
+    "arch": "x64",
+    "blockHosts": null,
+    "chromeWebSecurity": true,
+    "clientCertificates": [],
+    "defaultBrowser": null,
+    "defaultCommandTimeout": 4000,
+    "downloadsFolder": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22\\cypress\\downloads",
+    "env": {},
+    "execTimeout": 60000,
+    "experimentalCspAllowList": false,
+    "experimentalInteractiveRunEvents": false,
+    "experimentalRunAllSpecs": false,
+    "experimentalMemoryManagement": false,
+    "experimentalModifyObstructiveThirdPartyCode": false,
+    "injectDocumentDomain": false,
+    "experimentalOriginDependencies": false,
+    "experimentalSourceRewriting": false,
+    "experimentalSingleTabRunMode": false,
+    "experimentalStudio": false,
+    "experimentalWebKitSupport": false,
+    "fileServerFolder": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22",
+    "fixturesFolder": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22\\cypress\\fixtures",
+    "excludeSpecPattern": "*.hot-update.js",
+    "includeShadowDom": false,
+    "justInTimeCompile": true,
+    "keystrokeDelay": 0,
+    "modifyObstructiveCode": true,
+    "numTestsKeptInMemory": 0,
+    "platform": "win32",
+    "pageLoadTimeout": 60000,
+    "port": 54392,
+    "projectId": null,
+    "redirectionLimit": 20,
+    "reporter": "spec",
+    "reporterOptions": null,
+    "requestTimeout": 5000,
+    "resolvedNodePath": "C:\\Program Files\\nodejs\\node.exe",
+    "resolvedNodeVersion": "20.13.1",
+    "responseTimeout": 30000,
+    "retries": {
+      "runMode": 0,
+      "openMode": 0
+    },
+    "screenshotOnRunFailure": true,
+    "screenshotsFolder": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22\\cypress\\screenshots",
+    "slowTestThreshold": 10000,
+    "scrollBehavior": "top",
+    "supportFile": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22\\cypress\\support\\e2e.js",
+    "taskTimeout": 60000,
+    "testIsolation": true,
+    "trashAssetsBeforeRuns": true,
+    "userAgent": null,
+    "video": false,
+    "videoCompression": false,
+    "videosFolder": "C:\\Users\\jazzk\\Documents\\EBAC\\EngenhariaDeQualidadeDeSoftware\\modulo-22\\cypress\\videos",
+    "viewportHeight": 660,
+    "viewportWidth": 1000,
+    "waitForAnimations": true,
+    "watchForFileChanges": false,
+    "specPattern": "cypress/e2e/**/*.cy.{js,jsx,ts,tsx}",
+    "browsers": [
+      {
+        "channel": "stable",
+        "displayName": "Chrome",
+        "family": "chromium",
+        "majorVersion": "134",
+        "name": "chrome",
+        "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+        "version": "134.0.6998.36"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Edge",
+        "family": "chromium",
+        "majorVersion": "135",
+        "name": "edge",
+        "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+        "version": "135.0.3179.66"
+      },
+      {
+        "channel": "stable",
+        "displayName": "Electron",
+        "family": "chromium",
+        "majorVersion": 130,
+        "name": "electron",
+        "path": "",
+        "version": "130.0.6723.137"
+      }
+    ],
+    "cypressBinaryRoot": "C:\\Users\\jazzk\\AppData\\Local\\Cypress\\Cache\\14.2.0\\Cypress\\resources\\app",
+    "hosts": null,
+    "isInteractive": true,
+    "version": "14.2.0",
+    "testingType": "e2e",
+    "browser": null,
+    "cypressInternalEnv": "production"
+  },
+  "cypressVersion": "14.2.0",
+  "endedTestsAt": "2025-04-11T01:20:13.475Z",
+  "osName": "win32",
+  "osVersion": "10.0.26100",
+  "runs": [
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-04-11T01:18:37.918Z",
+        "end": "2025-04-11T01:18:46.774Z",
+        "duration": 8856
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/jazzk/Documents/EBAC/EngenhariaDeQualidadeDeSoftware/modulo-22/cypress/e2e/appActionsTest.cy.js",
+        "fileExtension": ".js",
+        "fileName": "appActionsTest",
+        "name": "appActionsTest.cy.js",
+        "relative": "cypress\\e2e\\appActionsTest.cy.js"
+      },
+      "stats": {
+        "duration": 8857,
+        "endedAt": "2025-04-11T01:18:46.771Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-04-11T01:18:37.914Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 8849,
+          "state": "passed",
+          "title": [
+            "Teste de Autenticação",
+            "deve fazer o login com sucesso"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-04-11T01:18:49.270Z",
+        "end": "2025-04-11T01:19:00.069Z",
+        "duration": 10799
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/jazzk/Documents/EBAC/EngenhariaDeQualidadeDeSoftware/modulo-22/cypress/e2e/cart.cy.js",
+        "fileExtension": ".js",
+        "fileName": "cart",
+        "name": "cart.cy.js",
+        "relative": "cypress\\e2e\\cart.cy.js"
+      },
+      "stats": {
+        "duration": 10803,
+        "endedAt": "2025-04-11T01:19:00.066Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-04-11T01:18:49.263Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 10789,
+          "state": "passed",
+          "title": [
+            "Carrinho - Intercept",
+            "Cart must have item(s)"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-04-11T01:19:06.625Z",
+        "end": "2025-04-11T01:19:43.714Z",
+        "duration": 37089
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/jazzk/Documents/EBAC/EngenhariaDeQualidadeDeSoftware/modulo-22/cypress/e2e/checkout.cy.js",
+        "fileExtension": ".js",
+        "fileName": "checkout",
+        "name": "checkout.cy.js",
+        "relative": "cypress\\e2e\\checkout.cy.js"
+      },
+      "stats": {
+        "duration": 37090,
+        "endedAt": "2025-04-11T01:19:43.710Z",
+        "failures": 0,
+        "passes": 2,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-04-11T01:19:06.620Z",
+        "suites": 1,
+        "tests": 2
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 24255,
+          "state": "passed",
+          "title": [
+            "Checkout",
+            "Complete checkout"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 12789,
+          "state": "passed",
+          "title": [
+            "Checkout",
+            "Clean cart"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 1,
+        "passes": 1,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-04-11T01:19:46.278Z",
+        "end": "2025-04-11T01:19:55.697Z",
+        "duration": 9419
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/jazzk/Documents/EBAC/EngenhariaDeQualidadeDeSoftware/modulo-22/cypress/e2e/pageObjectsTest.cy.js",
+        "fileExtension": ".js",
+        "fileName": "pageObjectsTest",
+        "name": "pageObjectsTest.cy.js",
+        "relative": "cypress\\e2e\\pageObjectsTest.cy.js"
+      },
+      "stats": {
+        "duration": 9422,
+        "endedAt": "2025-04-11T01:19:55.694Z",
+        "failures": 0,
+        "passes": 1,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-04-11T01:19:46.272Z",
+        "suites": 1,
+        "tests": 1
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 9413,
+          "state": "passed",
+          "title": [
+            "Access Admin Panel",
+            "should login with valid credentials"
+          ]
+        }
+      ],
+      "video": null
+    },
+    {
+      "error": null,
+      "reporter": "spec",
+      "reporterStats": {
+        "suites": 1,
+        "tests": 2,
+        "passes": 2,
+        "pending": 0,
+        "failures": 0,
+        "start": "2025-04-11T01:20:01.229Z",
+        "end": "2025-04-11T01:20:13.495Z",
+        "duration": 12266
+      },
+      "screenshots": [],
+      "spec": {
+        "absolute": "C:/Users/jazzk/Documents/EBAC/EngenhariaDeQualidadeDeSoftware/modulo-22/cypress/e2e/signUp.cy.js",
+        "fileExtension": ".js",
+        "fileName": "signUp",
+        "name": "signUp.cy.js",
+        "relative": "cypress\\e2e\\signUp.cy.js"
+      },
+      "stats": {
+        "duration": 12264,
+        "endedAt": "2025-04-11T01:20:13.475Z",
+        "failures": 0,
+        "passes": 2,
+        "pending": 0,
+        "skipped": 0,
+        "startedAt": "2025-04-11T01:20:01.211Z",
+        "suites": 1,
+        "tests": 2
+      },
+      "tests": [
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 9234,
+          "state": "passed",
+          "title": [
+            "Sign Up",
+            "Successful registration"
+          ]
+        },
+        {
+          "attempts": [
+            {
+              "state": "passed"
+            }
+          ],
+          "displayError": null,
+          "duration": 3006,
+          "state": "passed",
+          "title": [
+            "Sign Up",
+            "Already registered"
+          ]
+        }
+      ],
+      "video": null
+    }
+  ],
+  "startedTestsAt": "2025-04-11T01:18:37.914Z",
+  "totalDuration": 78436,
+  "totalFailed": 0,
+  "totalPassed": 7,
+  "totalPending": 0,
+  "totalSkipped": 0,
+  "totalSuites": 5,
+  "totalTests": 7
+}

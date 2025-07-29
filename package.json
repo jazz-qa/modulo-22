@@ -4,15 +4,22 @@
   "description": "Page objects and App actions",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npm run cy:run",
+    "start": "npx serverest",
+    "cy:run": "npx cypress run",
+    "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json  > mochawesome-report/report.json && npx marge mochawesome-report/report.json",
+    "cy:run-ci": "start-server-and-test start http://localhost:3000/api-doc test"
   },
   "author": "Jessica Oliveira",
   "license": "ISC",
   "dependencies": {
     "cypress": "^14.2.0",
+    "cypress-html-reporter": "^11.0.0",
     "faker-br": "^0.4.1"
   },
   "devDependencies": {
-    "@faker-js/faker": "^9.6.0"
+    "@faker-js/faker": "^9.6.0",
+    "cypress-mochawesome-reporter": "^4.0.0",
+    "start-server-and-test": "^2.0.12"
   }
 }
