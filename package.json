@@ -4,10 +4,11 @@
   "description": "Page objects and App actions",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "start-server": "npm start",
+    "test": "npm run cy:run",
     "start": "npx serverest",
-    "ci": "start-server-and-test start-server http://localhost:8080 test"
+    "cy:run": "npx cypress run",
+    "cy:report": "npx mochawesome-merge ./mochawesome-report/mochawesome*.json  > mochawesome-report/report.json && npx marge mochawesome-report/report.json",
+    "cy:run-ci": "start-server-and-test start http://localhost:3000/api-doc test"
   },
   "author": "Jessica Oliveira",
   "license": "ISC",

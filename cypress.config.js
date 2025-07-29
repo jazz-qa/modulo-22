@@ -1,16 +1,16 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  reporter: 'cypress-mochawesome-reporter',
-  reporterOptions: {
+  e2e: {
+    baseUrl: 'http://lojaebac.ebaconline.art.br/',
+    "reporter": "mochawesome",
+    "reporterOptions": {
         "reportDir": "mochawesome-report",
         "overwrite": false,
         "reportFilename": "index.html",
         "html": true,
         "json": false
     },
-  e2e: {
-    baseUrl: 'http://lojaebac.ebaconline.art.br/',
     setupNodeEvents(on, config) {
       // implement node event listeners here
       // require('cypress-html-reporter/GenerateReport')(on, config)
