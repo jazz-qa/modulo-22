@@ -14,7 +14,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       // implement node event listeners here
       // require('cypress-html-reporter/GenerateReport')(on, config)
-      require('cypress-mochawesome-reporter/plugin')(on);
+      // require('cypress-mochawesome-reporter/plugin')(on);
     },
   },
 });
