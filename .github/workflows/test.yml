@@ -4,30 +4,34 @@ on:
   push:
     branches: [ ci ]
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   test:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - name: Checkout código
+        uses: actions/checkout@v2
+
+      - name: Configura Node.js
+        uses: actions/setup-node@v2
         with:
           node-version: '14'
-      - name: Cypress run
+
+      - name: Instala dependências
+        run: npm install
+
+      - name: Executa Cypress com servidor em background
         uses: cypress-io/github-action@v2
-        continue-on-error: true
         with:
-          install-command: npm install
-          browser: chrome
           start: npm start
-      - name: Publish Report
+          wait-on: 'http://localhost:3000'
+          wait-on-timeout: 60
+          install: false
+          browser: chrome
+
+      - name: Publica relatório no GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
